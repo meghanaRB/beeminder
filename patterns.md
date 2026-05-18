@@ -41,9 +41,27 @@ for interviewers.
 - The chain-start check is `n - 1 not in set`, not `n + 1 not in set`.
 
 
-## Sliding window (the real one)
+## Two Pointer s
 
-**Recognize:** longest/shortest *contiguous* substring or subarray satisfying
-some property. Both pointers only ever move forward.
+1. Three types, by configuration:
 
-**Skeleton (memorize):**
+Opposite ends → pointers at [0, n-1], move inward
+Fast/slow → both start left, fast moves quicker
+Two sequences → one pointer per array
+
+2. When you see one:
+
+Sorted array + looking for a pair → opposite ends
+In-place array edit or cycle → fast/slow
+Merging two sorted things → two sequences
+
+3. The one question that gives you the move rule:
+
+Which pointer, if I keep it, can never beat what I've already seen?
+
+Move that one.
+4. Termination check:
+Every loop iteration must move some pointer. If a code path doesn't, you have an infinite loop.
+
+
+![alt text](image.png)
