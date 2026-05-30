@@ -38,3 +38,6 @@ class Solution:
                 start+=1
 
         return min_window
+    
+    ####notes
+    
