@@ -65,3 +65,4 @@ Every loop iteration must move some pointer. If a code path doesn't, you have an
 
 
 ![alt text](image.png)
+
