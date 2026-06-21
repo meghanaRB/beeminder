@@ -16,3 +16,6 @@ class Solution:
 
 
 ##brute force -- nexts to be modified
+
+
+
